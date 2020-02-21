@@ -1,5 +1,5 @@
 GO    := GO15VENDOREXPERIMENT=1 go
-PROMU := $(GOPATH)/bin/promu
+PROMU := promu
 pkgs   = $(shell $(GO) list ./... | grep -v /vendor/)
 
 GO_VERSION              ?= $(shell $(GO) version)

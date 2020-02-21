@@ -1,13 +1,14 @@
 package main
 
 import (
-	log "github.com/Sirupsen/logrus"
+	"net/http"
+
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"github.com/prometheus/common/version"
+	log "github.com/sirupsen/logrus"
 	"github.com/woozhijun/flume_exporter/exporter"
 	"gopkg.in/alecthomas/kingpin.v2"
-	"net/http"
 )
 
 const (
