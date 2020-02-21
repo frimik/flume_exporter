@@ -22,7 +22,7 @@ func main() {
 	var (
 		configFile       = kingpin.Flag("config-file", "Set config file").Default("config.yml").String()
 		listeningAddress = kingpin.Flag("listen.address", "The app listen address.").Default(":9360").String()
-		metricEndpoint   = kingpin.Flag("metric.endpiont", "The app listen endpiont.").Default("/metrics").String()
+		metricEndpoint   = kingpin.Flag("metric.endpoint", "The app listen endpoint.").Default("/metrics").String()
 		logLevel         = kingpin.Flag("log-level", "Set Logging level").Default("info").String()
 		metricFile       = kingpin.Flag("metric-file", "Set metrics file").Default("metrics.yml").String()
 	)
